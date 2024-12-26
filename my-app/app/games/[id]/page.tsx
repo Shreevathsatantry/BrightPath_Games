@@ -3,15 +3,15 @@
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { Button } from "@/components/ui/button"
-import ColorMatchingGame from '@/components/games/ColorMatchingGame'
-import EmotionRecognitionGame from '@/components/games/EmotionRecognitionGame'
-import ShapeSortingGame from '@/components/games/ShapeSortingGame'
-import MusicalPatternsGame from '@/components/games/MusicalPatternsGame'
-import MemoryCardGame from '@/components/games/MemoryCardGame'
-import WordFormationGame from '@/components/games/WordFormationGame'
-import GrammarDetectiveGame from '@/components/games/GrammarDetectiveGame'
-import BasicArithmeticGame from '@/components/games/BasicArithmeticGame'
-import ShapePatternGame from '@/components/games/ShapePatternGame'
+import ColorMatchingGame from '@/components/ColorMatchingGame'
+import EmotionRecognitionGame from '@/components/EmotionRecognitionGame'
+import ShapeSortingGame from '@/components/ShapeSortingGame'
+import MusicalPatternsGame from '@/components/MusicalPatternsGame'
+import MemoryCardGame from '@/components/MemoryCardGame'
+import WordFormationGame from '@/components/WordFormationGame'
+import GrammarDetectiveGame from '@/components/GrammarDetectiveGame'
+import BasicArithmeticGame from '@/components/BasicArithmeticGame'
+import ShapePatternGame from '@/components/ShapePatternGame'
 
 export default function GamePage({ params }: { params: { id: string } }) {
   const router = useRouter()

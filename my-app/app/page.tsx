@@ -1,6 +1,9 @@
+// Add "use client" at the top to make this a Client Component
+'use client';
+
+import { useEffect, useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 
 const games = [
   {
@@ -69,6 +72,17 @@ const games = [
 ]
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Set state to true only on the client-side
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null; // Render nothing until mounted on the client side
+
+  const { motion } = require('framer-motion'); // Import motion dynamically inside useEffect
+
   return (
     <main className="min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
@@ -130,6 +144,5 @@ export default function Home() {
         </motion.div>
       </div>
     </main>
-  )
+  );
 }
-

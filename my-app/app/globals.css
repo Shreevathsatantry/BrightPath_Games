@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@tailwind utilities;
+
 @keyframes twinkle {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.3;50% { opacity: 0.3; }
+  50% { opacity: 0.3; }
 }
+
 
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
